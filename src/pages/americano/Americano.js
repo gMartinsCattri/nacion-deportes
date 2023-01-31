@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react'
 import Header from '../../Components/nacionDeportes/Header'
-import {Link} from 'react-router-dom';
 import Slider from 'react-slick';
 
 
@@ -88,14 +87,7 @@ if (Array.isArray(teamIdArraySellected)) {
  const propertyValues = Object.values(showText);
       
        
-      const listShowButtonTeams = propertyValues.map(tienda =>
-   
-        <button onClick={getTeamId} style={{width: '350px', height: '130px', fontSize: '40px'}}>
-        <img style={{width: '100%', height: '100%'}} className={tienda.id}  src={tienda.teamLogo} alt="" />
-        
-         </button>
-
-       )
+    
 
 
        const settings = {
