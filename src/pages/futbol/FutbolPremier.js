@@ -55,32 +55,32 @@ const teamIdArraySellected = teamIdArray
 
 let listShowButtonTeamss;
 if (Array.isArray(teamIdArraySellected)) {
-    listShowButtonTeamss = teamIdArraySellected.map(tienda =>
-      <div style={{padding:'140px'}}>
-        <div style={{display: 'flex', alignItems: 'center'}}>
-        <img style={{width: '300px', height: '300px'}} src={tienda.teamLogo} alt="" /> 
-         <div  style={{display: 'flex', justifyContent: 'space-between', width: '100%', alignItems: 'center'}}>
-          <div>
-          <p style={{color:'black', fontSize: '120px', fontWeight: 'bold'}}>MVP</p>
-          <p style={{color:'black', fontSize: '100px', marginTop: '0px'}}>{tienda.team}</p>
-          </div>
-          <div>
-          <img style={{width: '700px', position: 'relative', top: '340px'}} src={tienda.playerImage} alt="" />
-          </div>
-          </div>
-          </div>
-          <div style={{backgroundColor:'#c2c2c2'}}>
-          <p style={{color:'white', fontSize: '120px', background: '#e41c42', paddingLeft: '40px' }}>{tienda.player}</p>
-          <p style={{color:'black', fontSize: '120px', paddingLeft: '60px', borderBottom:'10px solid #e41c42' }}>Habilidades</p>
-          <p style={{color:'black', fontSize: '120px', paddingLeft: '60px' }}>{tienda.skills}</p>      
-          <div style={{display: 'flex', justifyContent: 'space-between', borderTop:'10px solid #e41c42'}}>
-          <p style={{color:'black', fontSize: '120px', paddingLeft: '60px' }}>valor en el mercado</p> 
-          <p style={{color:'white', fontSize: '120px', padding: '20px', background:'#e41c42', borderRadius: '90px', fontWeight: 'bold' }}>{tienda.marketPrice}</p>
-          </div>  
-          </div> 
-             
-      </div>
-  )
+  listShowButtonTeamss = teamIdArraySellected.map(tienda =>
+    <div style={{padding:'140px'}}>
+      <div style={{display: 'flex', alignItems: 'center', height:'500px'}}>
+      <img style={{width: '300px', height: '300px'}} src={tienda.teamLogo} alt="" /> 
+       <div  style={{display: 'flex', justifyContent: 'space-between', width: '100%', alignItems: 'center'}}>
+        <div style={{marginLeft:'90px', lineHeight: 'initial'}}>
+        <p style={{color:'black', fontSize: '120px', fontWeight: 'bold'}}>MVP</p>
+        <p style={{color:'black', fontSize: '100px', marginTop: '0px'}}>{tienda.team}</p>
+        </div>
+        <div>
+        <img style={{width: '700px', position: 'relative', top: '340px'}} src={tienda.playerImage} alt="" />
+        </div>
+        </div>
+        </div>
+        <div style={{backgroundColor:'#c2c2c2'}}>
+        <p style={{color:'white', fontSize: '120px', background: '#e41c42', paddingLeft: '40px', textAlign:'start',fontFamily:'Montserrat', fontWeight:'bold' }}>{tienda.player}</p>
+        <p style={{color:'black', fontSize: '90px', textTransform: 'uppercase', paddingLeft: '120px', borderBottom:'10px solid #e41c42', textAlign:'start',fontFamily:'Montserrat', fontWeight:'bold' }}>Habilidades</p>
+        <p style={{color:'black', fontSize: '90px', padding: '40px 0px 40px 120px', textAlign:'start', lineHeight: 'initial',fontFamily:'Montserrat', fontWeight:'100'}}>{tienda.skills.split(" | ").map(s => <p>{s}</p>)}</p>      
+        <div style={{display: 'flex', justifyContent: 'space-between', borderTop:'10px solid #e41c42'}}>
+        <p style={{color:'black', fontSize: '90px', textTransform: 'uppercase', paddingLeft: '120px', textAlign:'start' ,fontFamily:'Montserrat', fontWeight:'bold'}}>valor en el mercado</p> 
+        <p style={{color:'white', fontSize: '120px', padding: '20px', background:'#e41c42', borderRadius: '90px', fontWeight: 'bold', textAlign:'start',fontFamily:'Montserrat', textTransform: 'lowercase',}}>{tienda.marketPrice}</p>
+        </div>  
+        </div> 
+           
+    </div>
+)
 }
 
 
