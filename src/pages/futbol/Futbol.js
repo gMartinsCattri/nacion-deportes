@@ -60,7 +60,7 @@ if (Array.isArray(teamIdArraySellected)) {
         <div style={{display: 'flex', alignItems: 'center', height:'500px'}}>
         <img style={{width: '300px', height: '300px'}} src={tienda.teamLogo} alt="" /> 
          <div  style={{display: 'flex', justifyContent: 'space-between', width: '100%', alignItems: 'center'}}>
-          <div style={{marginLeft:'90px', lineHeight: 'initial'}}>
+          <div style={{marginLeft:'90px', lineHeight: 'initial', textAlign: 'start'}}>
           <p style={{color:'black', fontSize: '120px', fontWeight: 'bold'}}>MVP</p>
           <p style={{color:'black', fontSize: '100px', marginTop: '0px'}}>{tienda.team}</p>
           </div>
@@ -72,10 +72,10 @@ if (Array.isArray(teamIdArraySellected)) {
           <div style={{backgroundColor:'#c2c2c2'}}>
           <p style={{color:'white', fontSize: '120px', background: '#e41c42', paddingLeft: '40px', textAlign:'start',fontFamily:'Montserrat', fontWeight:'bold' }}>{tienda.player}</p>
           <p style={{color:'black', fontSize: '90px', textTransform: 'uppercase', paddingLeft: '120px', borderBottom:'10px solid #e41c42', textAlign:'start',fontFamily:'Montserrat', fontWeight:'bold' }}>Habilidades</p>
-          <p style={{color:'black', fontSize: '90px', padding: '40px 0px 40px 120px', textAlign:'start', lineHeight: 'initial',fontFamily:'Montserrat', fontWeight:'100'}}>{tienda.skills.split(" | ").map(s => <p>{s}</p>)}</p>      
+          <p style={{color:'black', fontSize: '90px', padding: '40px 0px 40px 120px', textAlign:'start', lineHeight: 'initial',fontFamily:'Montserrat', fontWeight:'100'}}>{tienda.skills.split(" | ").map(s => <p style={{fontWeight:'800', fontFamily:'Montserrat'}}>{s}</p>)}</p>      
           <div style={{display: 'flex', justifyContent: 'space-between', borderTop:'10px solid #e41c42'}}>
           <p style={{color:'black', fontSize: '90px', textTransform: 'uppercase', paddingLeft: '120px', textAlign:'start' ,fontFamily:'Montserrat', fontWeight:'bold'}}>valor en el mercado</p> 
-          <p style={{color:'white', fontSize: '120px', padding: '20px', background:'#e41c42', borderRadius: '90px', fontWeight: 'bold', textAlign:'start',fontFamily:'Montserrat', textTransform: 'lowercase',}}>{tienda.marketPrice}</p>
+          <p style={{color:'white', fontSize: '95px', padding: '20px', background:'#e41c42', borderRadius: '90px', fontWeight: 'bold', textAlign:'start',fontFamily:'Montserrat', textTransform: 'lowercase',}}>${tienda.marketPrice}</p>
           </div>  
           </div> 
              
