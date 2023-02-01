@@ -8,7 +8,7 @@ import Slider from 'react-slick';
 
 const Americano = () => {
   const [showText, setShowText] = useState("")
-  const [teamId, setTeamId] = useState(1)
+  const [teamId, setTeamId] = useState(4)
   const [teamIdArray, setTeamIdArray] = useState(2)
     
     useEffect(() => {
