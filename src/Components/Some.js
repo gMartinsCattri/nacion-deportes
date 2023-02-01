@@ -59,7 +59,7 @@ function Some() {
   return (
     <div>  <div style={{height: '100%', display:'flex', alignItems: "center", flexDirection:'column', backgroundImage: 'url(https://alfred.to/media/cc_uat/app_deportes/back.png)'}}>
            
-    <div style={{ width: '100%', height: '40%', display: 'flex', justifyContent: 'space-around', alignItems:'center', flexDirection: 'column'}}>
+    <div style={{ width: '100%', height: '40vh', display: 'flex', justifyContent: 'space-around', alignItems:'center', flexDirection: 'column'}}>
         <div style={{ height: '40%', width: '90%', borderRadius: '50px'}}>
           
            <Link to='/futbol-ligas' onClick={futbol} ><img src="https://alfred.to/media/cc_uat/app_deportes/futbol.png" alt="" style={{width: '100%'}} /></Link>
@@ -71,12 +71,16 @@ function Some() {
     <div style={{width: '100%', height: '40%', display: 'flex', justifyContent: 'space-evenly', alignItems:'center', flexDirection: 'column'}}>
         
         <div style={{width: '100%', height: '40%', display: 'flex', justifyContent: 'space-evenly'}}>
-        <div style={{ width: '45%', borderRadius: '50px'}}>
-       <button onClick={baloncesto} style={{ width: '100%', backgroundColor: 'transparent', border: 'none'}}> <img src="https://alfred.to/media/cc_uat/app_deportes/basketball.png" alt="" style={{width: '100%'}} /></button>
+        <div style={{ width: '45%', borderRadius: '50px', margin:'40px'}}>
+       <button onClick={baloncesto} style={{ width: '100%', backgroundColor: 'transparent', border: 'none'}}> 
+       <img src="https://alfred.to/media/cc_uat/app_deportes/basketball.png" alt="" style={{width: '100%'}} />
+       </button>
 
         </div>
-        <div style={{  width: '45%', borderRadius: '50px'}}>
-       <button style={{ width: '100%', backgroundColor: 'transparent', border: 'none'}}> <img src="https://alfred.to/media/cc_uat/app_deportes/baseball.png" alt="" style={{width: '100%'}} /></button>
+        <div style={{  width: '45%', borderRadius: '50px', margin:'40px'}}>
+       <button style={{ width: '100%', backgroundColor: 'transparent', border: 'none'}}>
+         <img src="https://alfred.to/media/cc_uat/app_deportes/baseball.png" alt="" style={{width: '100%'}} />
+         </button>
 
         </div>
         </div>
