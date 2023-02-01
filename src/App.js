@@ -16,10 +16,10 @@ function App() {
       
       <Router>
                 <Routes>
-                    <Route path="/futbol" element={<Americano/>}/>
+                    <Route path="/futbol" element={<Futbol/>}/>
                     <Route path="/" element={<MainContent />}/>
                     <Route path="/futbol-premiere" element={<FutbolPremier/>}/>
-                    <Route path="/americano" element={<Futbol/>}/>
+                    <Route path="/americano" element={<Americano/>}/>
                     <Route path="/americano-nacional" element={<AmericanoNacional/>}/>
                     <Route path="/futbol-ligas" element={<FutbolLigas />}/>
                     <Route path="/americano-ligas" element={<AmericanoLigas />}/>

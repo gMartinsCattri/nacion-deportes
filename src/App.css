@@ -3260,21 +3260,21 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 70%;
+  width: 100%;
   border-top: 10px solid white;
 }
 
 .container-general-futbol-ligas{
   background-color: #0080fe;
   position: relative;
-  height: 800px;
+  height: 1000px;
   margin-bottom: 10px;
   border-radius: 80px;
 }
 
 .container-image{
   position: relative;
-  bottom: 340px;
+  bottom: 540px;
 }
 
 .liga-futbol-boxes{
@@ -3294,4 +3294,8 @@ a:hover {
 
 #container-juegos{
   padding-top: 0px !important;
+}
+.ligaImage{
+  width: 800px;
+  height: 800px;
 }
