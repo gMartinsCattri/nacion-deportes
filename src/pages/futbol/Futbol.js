@@ -9,6 +9,7 @@ const Americano = () => {
   const [showText, setShowText] = useState("")
   const [teamId, setTeamId] = useState(1)
   const [teamIdArray, setTeamIdArray] = useState(2)
+  const [teamName, setTeamName] = useState("")
     
     useEffect(() => {
         fetch(`https://alfred.to/reservas/spreadsheets/futbol/liga_mx`, {
@@ -34,11 +35,12 @@ console.log(showText)
 
 function getTeamId(e){
     setTeamId(e.target.className)
-
+    setTeamName(e.target.id)
 
   
 }
-
+console.log("teamName", teamName)
+console.log('teamid', teamId)
 useEffect(() => {
   if (Array.isArray(showText) && teamId) {
     const piso1 = showText.filter(tiendas => tiendas.hasOwnProperty('id') && tiendas.id === Number(teamId));
@@ -65,7 +67,7 @@ if (Array.isArray(teamIdArraySellected)) {
           <p style={{color:'black', fontSize: '100px', marginTop: '0px'}}>{tienda.team}</p>
           </div>
           <div>
-          <img style={{width: '700px', position: 'relative', top: '340px'}} src={tienda.playerImage} alt="" />
+          <img style={{width: '700px', position: 'relative', top: '340px', left:'128px'}} src={tienda.playerImage} alt="" />
           </div>
           </div>
           </div>
@@ -112,8 +114,8 @@ if (Array.isArray(teamIdArraySellected)) {
     <Slider {...settings}>
     {propertyValues.map(tienda => (
       <div key={tienda.id}>
-        <button onClick={getTeamId} style={{width: '280px', height: '260px', fontSize: '40px', background:'white', padding: '20px', borderRadius: '60px'}}>
-          <img style={{width: '100%', height: '100%'}} className={tienda.id} src={tienda.teamLogo} alt="" />
+        <button onClick={getTeamId}  style={{width: '280px', height: '260px', fontSize: '40px', background:'white', padding: '20px', borderRadius: '60px'}}>
+          <img style={{width: '100%', height: '100%'}}  className={tienda.id} src={tienda.teamLogo} alt="" />
         </button>
         <div>
           {tienda.name}
@@ -125,6 +127,10 @@ if (Array.isArray(teamIdArraySellected)) {
   </Slider>
 
   <div className='listTextosoosososo'>{listShowButtonTeamss}</div>
+  <p style={{display:'none', fontSize:'140px', fontWeight: 'bold', fontFamily:'Montserrat'}}>Matches</p>
+  <div style={{display:'none', height:'20%', background: 'red'}}>
+    <div></div>
+  </div>
 
   </div>    </div>
   )

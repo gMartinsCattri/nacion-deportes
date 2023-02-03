@@ -66,7 +66,7 @@ if (Array.isArray(teamIdArraySellected)) {
         <p style={{color:'black', fontSize: '100px', marginTop: '0px'}}>{tienda.team}</p>
         </div>
         <div>
-        <img style={{width: '700px', position: 'relative', top: '340px'}} src={tienda.playerImage} alt="" />
+        <img style={{width: '700px', position: 'relative', top: '340px', left:'128px'}} src={tienda.playerImage} alt="" />
         </div>
         </div>
         </div>
